@@ -24,12 +24,12 @@ export function Footer() {
       {/* Info Blocks */}
 
       {/* Bottom Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center 2xl:py-3 uw:py-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+      <div className="container mx-auto px-4 xs: py-2 sm:px-6 lg:px-8 flex items-center justify-center 2xl:py-4 uw:py-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-2">
           {/* Logo and Brand */}
           <div className="w-full max-w-lg mx-auto">
             <img src="/luis-sousa-software-eng.png" alt="Luis Sousa Software Engineer" />
-            <p className="text-gray-400 text-left mt-4">Não importa o quanto você bate, mas o quanto aguenta apanhar.  A vida é simples desde que aceitemos os desafios e desequilíbrios. Porém, só o tempo amadurece e proporciona essa sabedoria de existência – e isso dói.</p>
+            <p className="text-gray-400 text-left mt-2 text-xs ">Não importa o quanto você bate, mas o quanto aguenta apanhar.  A vida é simples desde que aceitemos os desafios e desequilíbrios. Porém, só o tempo amadurece e proporciona essa sabedoria de existência – e isso dói.</p>
           </div>
 
           {/* Social Links */}

@@ -40,14 +40,14 @@ export function Cases() {
   };
 
   return (
-    <section className="py-10 2xl:py-4 uw:py-6 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900/20 uw:mb-6">
+    <section className="bg-gradient-to-b from-transparent to-gray-900/20 py-2 sm:px-2 lg:px-4 2xl:px-4 2xl:py-1 uw:mb-6 uw:py-6">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center 2xl:mb-6 uw:mb-12">
-          <h2 className="text-white mb-2">
+        <div className="text-center 2xl:mb-4 uw:mb-12">
+          <h2 className="text-white">
             Cases de <span className="text-cyan-400">sucesso</span>
           </h2>
-          <p className="text-gray-400">Conheça alguns dos projetos desenvolvidos</p>
+          <p className="text-gray-400 text-sm">Conheça alguns dos projetos desenvolvidos</p>
         </div>
 
         {/* Case Display */}
@@ -66,7 +66,7 @@ export function Cases() {
                 <img
                   src={cases[currentCase].image}
                   alt={cases[currentCase].title}
-                  className="w-full 2xl:h-64 uw:h-72 object-cover"
+                  className="w-full 2xl:h-60 uw:h-72 object-cover"
                 />
               </div>
               <button
@@ -79,11 +79,11 @@ export function Cases() {
             </div>
 
             {/* Content */}
-            <div className="space-y-4">
-              <h3 className="text-white">{cases[currentCase].title}</h3>
+            <div className="space-y-1 px-2">
+              <h3 className="text-white ">{cases[currentCase].title}</h3>
               <p className="text-gray-400">{cases[currentCase].description}</p>
               <p className="text-gray-500 text-sm">{cases[currentCase].additionalInfo}</p>
-              <div className="flex flex-wrap gap-3 pt-4">
+              <div className="flex flex-wrap gap-3 pt-2">
                 <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2.5 rounded-md transition-colors flex items-center gap-2">
                   VER MAIS
                   <ExternalLink size={16} />
@@ -97,7 +97,7 @@ export function Cases() {
           </div>
 
           {/* Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-2 mt-3">
             {cases.map((_, index) => (
               <button
                 key={index}
