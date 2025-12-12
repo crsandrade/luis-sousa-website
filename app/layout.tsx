@@ -14,14 +14,12 @@ export const metadata: Metadata = {
   description: 'Apresentação comercial com Next.js, Tailwind e TypeScript',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className={`${exo2.variable} ${exo2.className}`}>{children}</body>
+      <body className={`${exo2.variable} ${exo2.className} relative`}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }

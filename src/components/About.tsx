@@ -1,191 +1,248 @@
-import { Rocket } from 'lucide-react';
+"use client";
+
+import { useState } from "react";
+import { Rocket } from "lucide-react";
 
 export function About() {
   const timelineItems = [
     {
-      year: 'Projeto Inicial',
-      title: 'Undefined Technology',
+      id: 1,
+      year: "Projeto Inicial",
+      title: "Undefined Technology",
       description:
-        'Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.',
-      side: 'left' as const,
+        "Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.",
+      category: "entrepreneurship",
     },
     {
-      year: 'Segundo Ano',
-      title: 'Undefined Technology',
+      id: 2,
+      year: "Segundo Ano",
+      title: "Undefined Technology",
       description:
-        'Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.',
-      side: 'right' as const,
+        "Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.",
+      category: "career",
     },
     {
-      year: 'Terceiro Ano',
-      title: 'Undefined Technology',
+      id: 3,
+      year: "Terceiro Ano",
+      title: "Undefined Technology",
       description:
-        'Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.',
-      side: 'left' as const,
+        "Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.",
+      category: "entrepreneurship",
     },
     {
-      year: 'Quarto Ano',
-      title: 'Undefined Technology',
+      id: 4,
+      year: "Quarto Ano",
+      title: "Undefined Technology",
       description:
-        'Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.',
-      side: 'right' as const,
+        "Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.",
+      category: "career",
     },
     {
-      year: 'Quinto Ano',
-      title: 'Undefined Technology',
+      id: 5,
+      year: "Quinto Ano",
+      title: "Undefined Technology",
       description:
-        'Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.',
-      side: 'left' as const,
+        "Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.",
+      category: "entrepreneurship",
     },
     {
-      year: 'Presente',
-      title: 'Undefined Technology',
+      id: 6,
+      year: "Presente",
+      title: "Undefined Technology",
       description:
-        'Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.',
-      side: 'right' as const,
+        "Com o crescimento de empresas e a grande demanda para sem processos, Undefined se estabeleceu com a proposta de transformar problemas para com a tecnologia.",
+      category: "career",
     },
   ];
 
+  const [highlightedCategory, setHighlightedCategory] = useState<string | null>(
+    null
+  );
+
+  const handleFilter = (category: string) => {
+    setHighlightedCategory((prev) => (prev === category ? null : category));
+  };
+
   return (
-    <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+    <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="container mx-auto">
-        {/* About Header */}
-        <section className="mb-20">
+        {/* ABOUT SECTION */}
+        <section className="mb-20 max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
             <div className="space-y-6">
-              <h1 className="text-white">
-                <span className="text-cyan-400">Luis</span> sousa
+              <h1 className="text-white font-bold text-4xl">
+                <img src="/luis-title.png" alt="" />
               </h1>
+
               <div className="space-y-4 text-gray-400">
                 <p>
-                  Sou um profissional de software com mais de 22 
-                  anos de experiência em tecnologia e 6 anos 
-                  desenvolvendo softwares complexos, sites e APIs, 
-                  sempre com foco em soluções inovadoras.
-                </p>
-                <p>
-                  Minha trajetória começou cedo ao aprender programação 
-                  e linguagens técnicas ainda jovem. Ao longo dos 
-                  anos, desenvolvi habilidades em múltiplas linguagens, 
-                  criando e implementando integrações e automações que 
-                  realmente fazem a diferença para os negócios. Tenho 
-                  grande prazer em entregar resultados tangíveis e que 
-                  realmente impactam.
-                </p>
-                <p>
-                  Hoje, além de desenvolver projetos personalizados que 
-                  transformam a forma como empresas operam, também 
-                  trabalho com soluções SaaS. Meu projeto é transformar 
-                  ideias complexas em soluções digitais com resultados 
-                  mensuráveis.
-                </p>
-                <p>
-                  Não sou apenas um programador. Sou o seu integrador 
-                  estratégico, que desenvolve soluções para integrar 
-                  sistemas e automatizar processos para facilitar a 
-                  gestão do seu negócio.
+                  Sou engenheiro de software com mais de 22 anos de experiência em tecnologia e 16 dedicados ao desenvolvimento de sistemas.
+ Minha trajetória começou ainda na adolescência, quando montei uma Lan House com meu pai e aprendi na prática que tecnologia vai muito além do código: é sobre visão, estratégia e impacto real.
+Hoje, atuo como consultor, mentor e desenvolvedor estratégico, alguém que conecta o mundo dos negócios ao plano digital. Traduzo ideias complexas em soluções claras, escaláveis e humanas, ajudando empreendedores e empresas a transformarem seus projetos em realidades vivas.
+
+Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o caos e a solução, entre o invisível e o palpável. Minha missão é transformar dores digitais em resultados concretos, com sabedoria, autenticidade e propósito.
                 </p>
               </div>
             </div>
 
-            {/* Right Image */}
             <div className="relative">
               <div className="relative w-full max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-3xl"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0fGVufDF8fHx8MTc2NTAwOTUyOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/luis-about.png"
                   alt="Luis Sousa"
-                  className="relative rounded-lg border-2 border-cyan-400/30 grayscale hover:grayscale-0 transition-all duration-500"
+                  className="relative rounded-lg border-cyan-400/30 grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Timeline Section */}
-        <section>
-          <div className="text-center mb-12">
-            <h2 className="text-white mb-3">
-              Linha do <span className="text-cyan-400">tempo</span>
-            </h2>
-            <p className="text-gray-400 mb-8">
-              Um pouco sobre minha jornada corporativa
-              <br />
-              desenvolvendo soluções de software
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-md transition-colors">
-                AGENDE UMA REUNIÃO
-              </button>
-              <button className="border border-gray-600 hover:border-cyan-400 text-gray-300 hover:text-cyan-400 px-6 py-3 rounded-md transition-colors">
-                FALAR VIA ZAP
-              </button>
-            </div>
+        {/* TIMELINE HEADER */}
+        <div className="text-center mb-12">
+          <h2 className="text-white text-3xl mb-3 font-semibold">
+            Linha do <span className="text-cyan-400">tempo</span>
+          </h2>
+          <p className="text-gray-400 mb-8">
+            Um pouco sobre minha jornada corporativa desenvolvendo soluções de
+            software
+          </p>
+        </div>
+
+        {/* FILTER BUTTONS */}
+        <div className="flex justify-center gap-6 mb-16">
+          <button
+            onClick={() => handleFilter("entrepreneurship")}
+            className={`px-6 py-2 rounded border uppercase tracking-wider transition-all duration-300 text-sm
+              ${
+                highlightedCategory === "entrepreneurship"
+                  ? "bg-cyan-500 border-cyan-500 text-white shadow-lg shadow-cyan-500/40 scale-105"
+                  : "border-gray-600 text-gray-400 hover:border-gray-400"
+              }`}
+          >
+            Empreendedorismo
+          </button>
+
+          <button
+            onClick={() => handleFilter("career")}
+            className={`px-6 py-2 rounded border uppercase tracking-wider transition-all duration-300 text-sm
+              ${
+                highlightedCategory === "career"
+                  ? "bg-cyan-500 border-cyan-500 text-white shadow-lg shadow-cyan-500/40 scale-105"
+                  : "border-gray-600 text-gray-400 hover:border-gray-400"
+              }`}
+          >
+            Carreira Tech
+          </button>
+        </div>
+
+        {/* TIMELINE STRUCTURE */}
+        <div className="relative max-w-6xl mx-auto">
+          {/* LINE PRINCIPAL */}
+          <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-[3px] bg-gradient-to-b from-transparent via-cyan-400 to-transparent lg:-translate-x-1/2 overflow-hidden">
+            {/* Pulso descendo */}
+            <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-flow-down opacity-80"></div>
           </div>
 
-          {/* Timeline */}
-          <div className="relative max-w-6xl mx-auto mt-16">
-            {/* Center Line */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-cyan-400 to-cyan-500 transform -translate-x-1/2"></div>
+          {/* TIMELINE ITEMS */}
+          <div className="space-y-20 mt-10">
+            {timelineItems.map((item, index) => {
+              const isLeft = index % 2 === 0;
 
-            {/* Timeline Items */}
-            <div className="space-y-12">
-              {timelineItems.map((item, index) => (
+              const isActive = highlightedCategory === item.category;
+              const isDim =
+                highlightedCategory !== null &&
+                highlightedCategory !== item.category;
+
+              return (
                 <div
-                  key={index}
-                  className={`relative flex flex-col lg:flex-row ${
-                    item.side === 'right' ? 'lg:flex-row-reverse' : ''
-                  } items-center gap-8`}
+                  key={item.id}
+                  className={`relative flex flex-col lg:flex-row items-center ${
+                    isLeft ? "lg:flex-row-reverse" : ""
+                  }`}
                 >
-                  {/* Content Card */}
-                  <div className="w-full lg:w-5/12">
-                    {item.side === 'left' && (
-                      <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/40 border border-cyan-700 rounded-lg p-6 space-y-3 hover:scale-105 transition-transform">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
-                            <Rocket size={20} className="text-white" />
-                          </div>
-                          <h3 className="text-white text-lg">{item.title}</h3>
-                        </div>
-                        <p className="text-gray-300 text-sm">{item.description}</p>
+                  {/* ============================ */}
+                  {/* CARD */}
+                  {/* ============================ */}
+                  <div
+                    className={`
+                      w-full lg:w-1/2 p-6 rounded-lg border transition-all duration-500
+                      ${
+                        isActive
+                          ? "bg-[#004b57] border-cyan-500 shadow-[0_0_30px_-5px_rgba(0,200,255,0.4)]"
+                          : "bg-[#0c1115] border-gray-800 hover:border-gray-600"
+                      }
+                      ${isDim ? "opacity-30 blur-[1px]" : "opacity-100"}
+                      ${isLeft ? "lg:ml-40" : "lg:mr-40"}
+                    `}
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
+                        <Rocket size={20} className="text-white" />
                       </div>
-                    )}
+                      <h3 className="text-white text-lg font-semibold">
+                        {item.title}
+                      </h3>
+                    </div>
+
+                    <p className="text-gray-300 text-sm">{item.description}</p>
                   </div>
 
-                  {/* Center Dot */}
-                  <div className="hidden lg:flex w-2/12 justify-center">
-                    <div className="relative">
-                      <div className="w-4 h-4 bg-cyan-400 rounded-full border-4 border-gray-900"></div>
-                      <div className="absolute top-1/2 -translate-y-1/2 -left-20 text-gray-400 text-sm whitespace-nowrap">
+                  {/* ============================ */}
+                  {/* DOT CENTRAL */}
+                  {/* ============================ */}
+                  <div className="absolute left-4 lg:left-1/2 lg:-translate-x-1/2 lg:static my-4">
+                    <div className="relative flex items-center justify-center">
+                      <div className="w-6 h-6 rounded-full bg-cyan-500 border-4 border-gray-900 shadow-lg"></div>
+
+                      <span className="text-gray-400 text-sm absolute -bottom-6 whitespace-nowrap">
                         {item.year}
-                      </div>
+                      </span>
                     </div>
                   </div>
 
-                  {/* Content Card (Right Side) */}
-                  <div className="w-full lg:w-5/12">
-                    {item.side === 'right' && (
-                      <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/40 border border-cyan-700 rounded-lg p-6 space-y-3 hover:scale-105 transition-transform">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
-                            <Rocket size={20} className="text-white" />
-                          </div>
-                          <h3 className="text-white text-lg">{item.title}</h3>
-                        </div>
-                        <p className="text-gray-300 text-sm">{item.description}</p>
-                      </div>
-                    )}
+                  {/* ============================ */}
+                  {/* RAMO DO CIRCUITO + PULSO */}
+                  {/* ============================ */}
+                  <div
+                    className={`
+                      absolute top-1/2 h-[3px] bg-cyan-400/70 shadow-[0_0_12px_#00eaff]
+                      overflow-hidden
+                      ${
+                        isLeft
+                          ? "right-1/2 translate-x-[28px] w-32"
+                          : "left-1/2 -translate-x-[28px] w-32"
+                      }
+                    `}
+                  >
+                    {/* Pulso no ramo */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-flow-right"></div>
                   </div>
-
-                  {/* Mobile Year Label */}
-                  <div className="lg:hidden text-cyan-400 text-sm">{item.year}</div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
-        </section>
+        </div>
       </div>
+
+      {/* ANIMAÇÕES PERSONALIZADAS */}
+      <style>{`
+        @keyframes flow-down {
+          0% { transform: translateY(-100%); }
+          100% { transform: translateY(200%); }
+        }
+        .animate-flow-down {
+          animation: flow-down 3s linear infinite;
+        }
+
+        @keyframes flow-right {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(200%); }
+        }
+        .animate-flow-right {
+          animation: flow-right 2.5s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }

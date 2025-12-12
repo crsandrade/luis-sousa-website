@@ -40,11 +40,11 @@ export function Cases() {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900/20">
+    <section className="py-10 fhd:py-4 wqhd:py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900/20 wqhd:mb-12">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-white mb-3">
+        <div className="text-center fhd:mb-6 wqhd:mb-12">
+          <h2 className="text-white mb-2">
             Cases de <span className="text-cyan-400">sucesso</span>
           </h2>
           <p className="text-gray-400">Conheça alguns dos projetos desenvolvidos</p>
@@ -66,7 +66,7 @@ export function Cases() {
                 <img
                   src={cases[currentCase].image}
                   alt={cases[currentCase].title}
-                  className="w-full h-64 md:h-80 object-cover"
+                  className="w-full fhd:h-64 wqhd:h-80 object-cover"
                 />
               </div>
               <button
