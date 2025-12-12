@@ -77,7 +77,7 @@ export function About() {
               <div className="space-y-4 text-gray-400">
                 <p>
                   Sou engenheiro de software com mais de 22 anos de experiência em tecnologia e 16 dedicados ao desenvolvimento de sistemas.
- Minha trajetória começou ainda na adolescência, quando montei uma Lan House com meu pai e aprendi na prática que tecnologia vai muito além do código: é sobre visão, estratégia e impacto real.
+Minha trajetória começou ainda na adolescência, quando montei uma Lan House com meu pai e aprendi na prática que tecnologia vai muito além do código: é sobre visão, estratégia e impacto real.
 Hoje, atuo como consultor, mentor e desenvolvedor estratégico, alguém que conecta o mundo dos negócios ao plano digital. Traduzo ideias complexas em soluções claras, escaláveis e humanas, ajudando empreendedores e empresas a transformarem seus projetos em realidades vivas.
 
 Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o caos e a solução, entre o invisível e o palpável. Minha missão é transformar dores digitais em resultados concretos, com sabedoria, autenticidade e propósito.

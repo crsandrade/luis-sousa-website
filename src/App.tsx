@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
-import { SocialBanner } from './components/Banner';
+import { Banner } from './components/Banner';
 import { Cases } from './components/Cases';
 import { Testimonials } from './components/Testimonials';
 import { Footer } from './components/Footer';
 import { About } from './components/About';
+import personImage from "@/public/luis-profilephoto.png"; 
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'about'>('home');
@@ -18,7 +19,7 @@ export default function App() {
         <>
           <Hero />
           <Services />
-          <SocialBanner />
+          <Banner personImage={personImage} />
           <Cases />
           <Testimonials />
         </>

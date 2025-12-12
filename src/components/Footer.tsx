@@ -20,11 +20,11 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-transparent to-gray-900 border-t border-gray-800 pt-2 mt-8">
+    <footer className="bg-gradient-to-b from-transparent to-gray-900 border-t border-gray-800">
       {/* Info Blocks */}
 
       {/* Bottom Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center fhd:py-3 wqhd:py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center 2xl:py-3 uw:py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           {/* Logo and Brand */}
           <div className="w-full max-w-lg mx-auto">

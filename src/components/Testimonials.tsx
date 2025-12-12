@@ -26,20 +26,20 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="fhd:py-2 wqhd:py-12 px-4 sm:px-6 lg:px-8 mb-6 wqhd:mb-14 w-full flex items-center justify-center">
-      <div className="container wqhd:max-w-screen-fhd fhd:max-w-screen-2xl">
-        <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/40 border border-cyan-700 rounded-lg p-6 fhd:p-4 wqhd:p-12">
+    <section className="2xl:py-2 uw:py-4 px-4 sm:px-6 lg:px-8 mb-6 uw:mb-8 w-full flex items-center justify-center">
+      <div className="container uw:max-w-screen-2xl 2xl:max-w-screen-2xl">
+        <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/40 border border-cyan-700 rounded-lg p-6 2xl:p-4 uw:p-6">
           {/* Header */}
           <div className="text-center mb-6">
             <h2 className="text-white">Veja o que os clientes dizem</h2>
           </div>
 
           {/* Testimonials Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-gray-900/50 border border-gray-700 rounded-lg p-6 space-y-4 fhd:p-6 wqhd:p-12 hover:border-cyan-400 transition-colors"
+                className="bg-gray-900/50 border border-gray-700 rounded-lg p-6 space-y-4 2xl:p-6 uw:p-4 hover:border-cyan-400 transition-colors"
               >
                 {/* Profile */}
                 <div className="flex items-center gap-3">
@@ -49,8 +49,8 @@ export function Testimonials() {
                     className="w-12 h-12 rounded-full object-cover border-2 border-cyan-400"
                   />
                   <div>
-                    <h4 className="text-white text-xs fhd:text-lg wqhd:text-xl">{testimonial.name}</h4>
-                    <p className="text-gray-400 text-xs fhd:text-sm wqhd:text-base">{testimonial.role}</p>
+                    <h4 className="text-white text-xs 2xl:text-sm uw:text-base">{testimonial.name}</h4>
+                    <p className="text-gray-400 text-xs 2xl:text-xs uw:text-sm">{testimonial.role}</p>
                   </div>
                 </div>
 
@@ -62,13 +62,13 @@ export function Testimonials() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-gray-300 text-sm fhd:text-base wqhd:text-lg">{testimonial.text}</p>
+                <p className="text-gray-300 text-sm 2xl:text-sm uw:text-base">{testimonial.text}</p>
               </div>
             ))}
           </div>
 
           {/* View More Button */}
-          <div className="flex justify-center fhd:text-sm">
+          <div className="flex justify-center 2xl:text-sm">
             <button className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white px-6 py-3 rounded-md transition-colors flex items-center gap-2">
               VER MAIS DEPOIMENTOS
               <ChevronRight size={18} />

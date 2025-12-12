@@ -14,7 +14,6 @@ export default {
       screens: {
         fhd: '1920px',
         uw: '2560px',
-        wqhd: '3440px',
       },
     },
   },
