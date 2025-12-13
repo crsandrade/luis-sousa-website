@@ -41,7 +41,7 @@ export function Services() {
   ];
 
   return (
-    <section className="pb-4 2xl:pb-4 uw:pb-6 uw:mb-6 px-6 lg:px-8 relative  ">
+    <section className="pb-4 2xl:pb-4 uw:pb-6 uw:mb-6 px-6 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
 
         {/* GRID DE SERVIÇOS */}
@@ -51,7 +51,7 @@ export function Services() {
               key={index}
               className={`rounded-xl border ${service.borderColor} bg-gradient-to-br from-[#0e0e0e] to-[#151515] uw:p-12 2xl:p-4 shadow-lg shadow-black/20
               hover:-translate-y-1 hover:shadow-xl hover:border-cyan-400 transition-all duration-300
-              flex flex-col h-full`}  // ⭐ MANTÉM O BOTÃO FIXO NO FUNDO
+              flex flex-col h-full py-1`}  // ⭐ MANTÉM O BOTÃO FIXO NO FUNDO
             >
 
               {/* 🔹 SUBTÍTULO */}

@@ -29,16 +29,16 @@ export function Hero() {
               
               🔵 Circuito animado no fundo */}
             <div className="flex flex-wrap gap-6 sm:gap-8">
-              <button className="bg-[linear-gradient(90deg,#007A93,#0A4A57,#007A93,#0A4A57)] text-white px-6 py-2 rounded-md transition-colors flex items-center gap-2 font-semibold">
+              <button className="bg-[linear-gradient(90deg,#007A93,#0A4A57,#007A93,#0A4A57)] text-white px-6 py-2 rounded-md transition-colors transition-transform hover:brightness-110 hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-[1.02] flex items-center gap-2 font-semibold">
                 vamos conversar
               </button>
 
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center">
+                <div className="group w-10 h-10 border-2 border-white rounded-full flex items-center justify-center transition-all hover:border-cyan-400 hover:shadow-[0_0_12px_rgba(0,255,255,0.35)] hover:scale-[1.06] cursor-pointer">
                   <div className="w-0 h-0 
                     border-t-[8px] border-t-transparent 
                     border-b-[8px] border-b-transparent 
-                    border-l-[16px] border-l-cyan-600"></div>
+                    border-l-[16px] border-l-cyan-600 transition-colors group-hover:border-l-cyan-400"></div>
                 </div>
 
                 <button className="text-white hover:text-cyan-400 transition-colors font-semibold flex items-center gap-2">
