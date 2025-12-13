@@ -43,7 +43,7 @@ export function Cases() {
     <section className="bg-gradient-to-b from-transparent to-gray-900/20 py-2 sm:px-2 lg:px-4 2xl:px-4 2xl:py-1 uw:mb-6 uw:py-6">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center 2xl:mb-4 uw:mb-12">
+        <div className="text-center mb-2 2xl:mb-4 uw:mb-12">
           <h2 className="text-white">
             Cases de <span className="text-cyan-400">sucesso</span>
           </h2>

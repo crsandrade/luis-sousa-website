@@ -9,7 +9,7 @@ interface BannerProps {
 
 export function Banner({ personImage }: BannerProps) {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 mb-16">
+    <div className="w-full max-w-7xl mx-auto px-4 md-2 md:mb-16">
       <div className="relative bg-gradient-to-r from-cyan-800 to-cyan-700 rounded-2xl overflow-hidden shadow-2xl">
 
         <div className="relative flex flex-col md:flex-row items-center justify-between">

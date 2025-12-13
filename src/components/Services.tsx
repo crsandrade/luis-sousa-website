@@ -63,7 +63,7 @@ export function Services() {
                 {service.title}
               </h3>
 
-              <ul className="uw:space-y-4 2xl:space-y-2 flex-grow uw:mb-6 2xl:mb-4">  {/* ⭐ EMPURRA O BOTÃO */}
+              <ul className="uw:space-y-4 2xl:space-y-2 flex-grow mb-2 2xl:mb-4 uw:mb-6 ">  {/* ⭐ EMPURRA O BOTÃO */}
                 {service.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-300 text-sm 2xl:text-xs uw:text-base leading-relaxed">
                     <CheckCircle size={18} className="text-cyan-400 flex-shrink-0 mt-0.5" />
