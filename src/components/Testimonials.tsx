@@ -5,7 +5,7 @@ export function Testimonials() {
     {
       name: 'Rafaela Troesi',
       role: '@trolesidigital',
-      image: '../public/rafaela-troesi.png',
+      image: '/rafaelatrolesi.png',
       text: 'Que material incrível Geisi. Eu adoro uma planilha, e essa Planilha Master tá surreal! Eu não sabia que precisava até comprar e ver a real necessidade de ter todo esse controle. Tudo num lugar só facilita demais.Comprei o DOC MASTER por causa da Proposta Comercial e do Contrato e você superou todas as minhas expectativas!!! Sou grata pela sua dedicação em oferecer sempre o melhor.',
       rating: 5,
     },

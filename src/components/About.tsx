@@ -71,16 +71,17 @@ export function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-white font-bold text-4xl">
-                <img src="/luis-title.png" alt="" />
+                <img src="/luis-title.png" alt="Luis Sousa Escrito em Azul" />
               </h1>
 
-              <div className="space-y-4 text-gray-400">
+              <div className="space-y-4 text-white">
                 <p>
                   Sou engenheiro de software com mais de 22 anos de experiência em tecnologia e 16 dedicados ao desenvolvimento de sistemas.
-Minha trajetória começou ainda na adolescência, quando montei uma Lan House com meu pai e aprendi na prática que tecnologia vai muito além do código: é sobre visão, estratégia e impacto real.
-Hoje, atuo como consultor, mentor e desenvolvedor estratégico, alguém que conecta o mundo dos negócios ao plano digital. Traduzo ideias complexas em soluções claras, escaláveis e humanas, ajudando empreendedores e empresas a transformarem seus projetos em realidades vivas.
-
-Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o caos e a solução, entre o invisível e o palpável. Minha missão é transformar dores digitais em resultados concretos, com sabedoria, autenticidade e propósito.
+                  Minha trajetória começou ainda na adolescência, quando montei uma Lan House com meu pai e aprendi na prática que tecnologia vai muito além do código: é sobre visão, estratégia e impacto real.
+                  Hoje, atuo como consultor, mentor e desenvolvedor estratégico, alguém que conecta o mundo dos negócios ao plano digital. Traduzo ideias complexas em soluções claras, escaláveis e humanas, ajudando empreendedores e empresas a transformarem seus projetos em realidades vivas.
+                </p>
+                <p>
+                  Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o caos e a solução, entre o invisível e o palpável. Minha missão é transformar dores digitais em resultados concretos, com sabedoria, autenticidade e propósito.
                 </p>
               </div>
             </div>
@@ -91,7 +92,7 @@ Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o ca
                 <img
                   src="/luis-about.png"
                   alt="Luis Sousa"
-                  className="relative rounded-lg border-cyan-400/30 grayscale hover:grayscale-0 transition-all duration-500"
+                  className="relative rounded-lg border-cyan-400/30 grayscale hover:grayscale-0 transition-all duration-500 h-[400px] uw:h-[500px]"
                 />
               </div>
             </div>
@@ -166,7 +167,7 @@ Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o ca
                   {/* ============================ */}
                   <div
                     className={`
-                      w-full lg:w-1/2 p-6 rounded-lg border transition-all duration-500
+                      w-full lg:w-1/2 p-6 rounded-lg border transition-all duration-500 px-8 py-6 uw:px-10 uw:py-6
                       ${
                         isActive
                           ? "bg-[#004b57] border-cyan-500 shadow-[0_0_30px_-5px_rgba(0,200,255,0.4)]"
@@ -180,12 +181,12 @@ Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o ca
                       <div className="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
                         <Rocket size={20} className="text-white" />
                       </div>
-                      <h3 className="text-white text-lg font-semibold">
+                      <h3 className="text-white text-xl font-semibold">
                         {item.title}
                       </h3>
                     </div>
 
-                    <p className="text-gray-300 text-sm">{item.description}</p>
+                    <p className="text-gray-300 text-base">{item.description}</p>
                   </div>
 
                   {/* ============================ */}
@@ -193,9 +194,9 @@ Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o ca
                   {/* ============================ */}
                   <div className="absolute left-4 lg:left-1/2 lg:-translate-x-1/2 lg:static my-4">
                     <div className="relative flex items-center justify-center">
-                      <div className="w-6 h-6 rounded-full bg-cyan-500 border-4 border-gray-900 shadow-lg"></div>
+                      <div className="hidden lg:block w-6 h-6 rounded-full bg-cyan-500 border-4 border-gray-900 shadow-lg"></div>
 
-                      <span className="text-gray-400 text-sm absolute -bottom-6 whitespace-nowrap">
+                      <span className="hidden lg:block text-gray-400 text-sm absolute -bottom-6 whitespace-nowrap">
                         {item.year}
                       </span>
                     </div>
@@ -206,7 +207,7 @@ Não sou apenas um programador. Sou o Mago do Código, um facilitador entre o ca
                   {/* ============================ */}
                   <div
                     className={`
-                      absolute top-1/2 h-[3px] bg-cyan-400/70 shadow-[0_0_12px_#00eaff]
+                      hidden lg:block absolute top-1/2 h-[3px] bg-cyan-400/70 shadow-[0_0_12px_#00eaff]
                       overflow-hidden
                       ${
                         isLeft
